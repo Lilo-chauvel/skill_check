@@ -1,6 +1,9 @@
-def main():
-    print("Hello from skill-check!")
+from User import User
 
+jean = User("Jean","1")
+paul = User("Paul","2")
 
-if __name__ == "__main__":
-    main()
+print(
+    jean.name + " have this id : " + jean.id +
+    "\n" + paul.name + " have this id : " + paul.id
+)

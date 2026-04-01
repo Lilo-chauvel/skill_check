@@ -1,9 +1,9 @@
 from User import User
 
-jean = User("Jean","1")
-paul = User("Paul","2")
+jean = User("Jean",1)
+paul = User("Paul",2)
 
 print(
-    jean.name + " have this id : " + jean.id +
-    "\n" + paul.name + " have this id : " + paul.id
+    f"{jean.name} have this id : {jean.id}" +
+    "\n" + f"{paul.name} have this id : {paul.id}"
 )

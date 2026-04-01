@@ -1,8 +1,8 @@
-from user import User
+from .user import User
 
 
 class Instructor(User):
 
 
-    def can_validate(self,competence_id: int) -> bool:
+    def can_validate(self, competence_id: int) -> bool:
         return True

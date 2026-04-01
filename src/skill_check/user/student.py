@@ -1,5 +1,5 @@
 from typing import Optional
-from User import User
+from user import User
 
 
 class Student(User):
@@ -10,3 +10,10 @@ class Student(User):
 
     def can_validate(self, competence_id: int) -> bool:
         return competence_id in self.__validate_competences
+
+    def add_competence(self,competence_id: int):
+        if competence_id in self.__validate_competences:
+            return ValueError
+        else:
+            self.__validate_competences.insert(competence_id)
+            return self
